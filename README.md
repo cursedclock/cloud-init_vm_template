@@ -91,7 +91,7 @@ datasource:
  
  ---
  ## Deploying a New Machine From a Template:
-To make a new guest machine from a template, simply copy the template image, resize it to the desired value, and install a vm on that machine using virt-install.
+To make a new guest machine from a template, simply copy the template image, resize it to the desired value, and install a vm on that machine using virt-install. (Note: you will need to resize partitions inside the guest machine, this can also be automated by cloud-init)
  ```bash
  # copy and resize template image
  cp $DISKLOCATION/$TEMPLATENAME.qcow2 $INSTANCENAME.qcow2
