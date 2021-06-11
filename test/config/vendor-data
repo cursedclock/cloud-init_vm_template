@@ -1,0 +1,8 @@
+#cloud-config
+phone_home:
+  url: http://192.168.122.1/done
+  post: 
+    - pub_key_rsa
+    - instance_id
+    - hostname
+  tries: 5
